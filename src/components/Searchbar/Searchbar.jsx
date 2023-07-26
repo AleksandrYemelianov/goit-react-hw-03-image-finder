@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 import css from './Searchbar.module.css';
+import { MdImageSearch } from 'react-icons/md';
 
 
 export default class Searchbar extends Component {
@@ -32,7 +33,7 @@ export default class Searchbar extends Component {
       <header className={css.searchbar}>
         <form onSubmit={handleSubmit} className={css.searchForm}>
           <button type="submit" className={css.searchFormBtn}>
-            <span className={css.btnLabel}></span>
+            <span className={css.btnLabel}><MdImageSearch className={css.iconSearch} /></span>
           </button>
 
           <input
